@@ -1,0 +1,8 @@
+@import "fonts.css";
+@import "default.css";
+
+div {
+  background-color: yellow;
+
+  color: red;
+}
