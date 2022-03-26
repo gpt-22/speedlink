@@ -1,8 +1,12 @@
+@import "variables.css";
 @import "fonts.css";
 @import "default.css";
 
-div {
-  background-color: yellow;
+@import "components/header.css";
 
-  color: red;
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-background);
+  padding: 170px 0 0;
 }
