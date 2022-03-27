@@ -7,7 +7,13 @@
   border: none;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 body {
+  background: var(--color-background);
   font-family: "AirbnbCereal-Md";
   font-size: 14px;
   color: white;

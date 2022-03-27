@@ -1,0 +1,127 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 170px 0 0;
+  background: url("../img/background-headphones.jpg") right no-repeat;
+}
+
+.container {
+  padding: 160px 75px 0;
+}
+
+.product {
+  max-width: 720px;
+}
+
+.product-title {
+  font-size: 62px;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+
+.product-title::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 3.5px;
+  width: 400px;
+  height: 16px;
+  background: var(--color-primary);
+  z-index: -1;
+}
+
+.rating {
+  margin: 0 0 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.rating-text {
+  margin: 0 0 0 10px;
+  font-size: 18px;
+  color: var(--color-secondary);
+  font: 18px "AirbnbCereal-Lt";
+}
+
+.product-description {
+  margin: 0 0 24px 0;
+  font: 19px "AirbnbCereal-Lt";
+}
+
+.product-price {
+  font: 62px "AirbnbCereal-Bd";
+  line-height: 61px;
+  color: var(--color-primary);
+}
+
+.product-price-previous {
+  font-size: 25px;
+  text-decoration: line-through;
+  margin: 0 0 40px 0;
+}
+
+.product-buttons {
+  display: flex;
+  margin: 0 0 13px 0;
+}
+
+.product-button {
+  padding: 14px 28px;
+  background-color: transparent;
+  color: var(--color-primary);
+  font: 19px "AirbnbCereal-Bd";
+  cursor: pointer;
+}
+
+.add-to-cart {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+.add-to-cart-icon {
+  width: 26px;
+  height: 27px;
+  margin: 0 7px 0 0;
+}
+
+.add-to-cart-text {
+  font: 19px "AirbnbCereal-Md";
+  line-height: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.product-quantity {
+  margin: 0 0 0 8px;
+  border: 3px solid var(--color-primary);
+}
+.product-quantity-minus,
+.product-quantity-plus {
+  padding: 14px 14px;
+}
+.product-quantity-number {
+  font: 19px "AirbnbCereal-Bd";
+  color: var(--color-primary);
+}
+.product-quantity-plus {
+}
+
+.add-to-favorites {
+  display: flex;
+  background: transparent;
+  border-bottom: 2px solid white;
+}
+
+.add-to-favorites-icon {
+  width: 15px;
+  height: 15px;
+}
+.add-to-favorites-text {
+  margin: 0 0 3px 3px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}

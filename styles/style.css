@@ -4,9 +4,4 @@
 
 @import "components/header.css";
 
-.main {
-  width: 100vw;
-  height: 100vh;
-  background: var(--color-background);
-  padding: 170px 0 0;
-}
+@import "pages/page1.css";
