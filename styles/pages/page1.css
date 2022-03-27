@@ -2,11 +2,12 @@
   width: 100vw;
   height: 100vh;
   padding: 170px 0 0;
-  background: url("../img/background-headphones.jpg") right no-repeat;
+  background: url("../../img/background-headphones.jpg") right no-repeat;
 }
 
 .container {
   padding: 160px 75px 0;
+  position: relative;
 }
 
 .product {
@@ -124,4 +125,14 @@
   font-size: 14px;
   line-height: 18px;
   color: white;
+}
+
+.product-image {
+  position: absolute;
+  top: -16%;
+  left: 36%;
+}
+
+.product-image > img {
+  width: 690px;
 }
