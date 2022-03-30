@@ -14,13 +14,13 @@
   max-width: 720px;
 }
 
-.product-title {
+.product__title {
   font-size: 62px;
   margin: 0 0 12px 0;
   position: relative;
 }
 
-.product-title::before {
+.product__title::before {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -31,31 +31,34 @@
   z-index: -1;
 }
 
-.rating {
+.product__rating {
   margin: 0 0 40px 0;
+}
+
+.product-rating {
   display: flex;
   align-items: center;
 }
 
-.rating-text {
+.product-rating__text {
   margin: 0 0 0 10px;
   font-size: 18px;
   color: var(--color-secondary);
   font: 18px "AirbnbCereal-Lt";
 }
 
-.product-description {
+.product__description {
   margin: 0 0 24px 0;
   font: 19px "AirbnbCereal-Lt";
 }
 
-.product-price {
+.product__price {
   font: 62px "AirbnbCereal-Bd";
   line-height: 61px;
   color: var(--color-primary);
 }
 
-.product-price-previous {
+.product__price-previous {
   font-size: 25px;
   text-decoration: line-through;
   margin: 0 0 40px 0;
@@ -81,13 +84,13 @@
   background-color: var(--color-primary);
 }
 
-.add-to-cart-icon {
+.add-to-cart__icon {
   width: 26px;
   height: 27px;
   margin: 0 7px 0 0;
 }
 
-.add-to-cart-text {
+.add-to-cart__text {
   font: 19px "AirbnbCereal-Md";
   line-height: 5px;
   letter-spacing: 1px;
@@ -99,15 +102,13 @@
   margin: 0 0 0 8px;
   border: 3px solid var(--color-primary);
 }
-.product-quantity-minus,
-.product-quantity-plus {
+.product-quantity__minus,
+.product-quantity__plus {
   padding: 14px 14px;
 }
-.product-quantity-number {
+.product-quantity__number {
   font: 19px "AirbnbCereal-Bd";
   color: var(--color-primary);
-}
-.product-quantity-plus {
 }
 
 .add-to-favorites {
@@ -116,23 +117,23 @@
   border-bottom: 2px solid white;
 }
 
-.add-to-favorites-icon {
+.add-to-favorites__icon {
   width: 15px;
   height: 15px;
 }
-.add-to-favorites-text {
+.add-to-favorites__text {
   margin: 0 0 3px 3px;
   font-size: 14px;
   line-height: 18px;
   color: white;
 }
 
-.product-image {
+.product__image {
   position: absolute;
   top: -16%;
   left: 36%;
 }
 
-.product-image > img {
+.product__image > img {
   width: 690px;
 }
