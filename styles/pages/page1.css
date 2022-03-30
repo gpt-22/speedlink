@@ -27,24 +27,12 @@
   left: 3.5px;
   width: 400px;
   height: 16px;
-  background: var(--color-primary);
+  background: #cf052d;
   z-index: -1;
 }
 
 .product__rating {
   margin: 0 0 40px 0;
-}
-
-.product-rating {
-  display: flex;
-  align-items: center;
-}
-
-.product-rating__text {
-  margin: 0 0 0 10px;
-  font-size: 18px;
-  color: var(--color-secondary);
-  font: 18px "AirbnbCereal-Lt";
 }
 
 .product__description {
@@ -55,7 +43,7 @@
 .product__price {
   font: 62px "AirbnbCereal-Bd";
   line-height: 61px;
-  color: var(--color-primary);
+  color: #cf052d;
 }
 
 .product__price-previous {
@@ -64,7 +52,35 @@
   margin: 0 0 40px 0;
 }
 
+.product__image {
+  position: absolute;
+  top: -16%;
+  left: 36%;
+}
+
+.product__image > img {
+  width: 690px;
+}
+
+.product-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-rating__text {
+  margin: 0 0 0 10px;
+  font-size: 18px;
+  color: #828282;
+  font: 18px "AirbnbCereal-Lt";
+}
+
 .product-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0 13px 0;
 }
@@ -72,16 +88,20 @@
 .product-button {
   padding: 14px 28px;
   background-color: transparent;
-  color: var(--color-primary);
+  color: #cf052d;
   font: 19px "AirbnbCereal-Bd";
   cursor: pointer;
 }
 
 .add-to-cart {
   height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  background-color: var(--color-primary);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cf052d;
 }
 
 .add-to-cart__icon {
@@ -100,18 +120,21 @@
 
 .product-quantity {
   margin: 0 0 0 8px;
-  border: 3px solid var(--color-primary);
+  border: 3px solid #cf052d;
 }
-.product-quantity__minus,
-.product-quantity__plus {
+
+.product-quantity__minus, .product-quantity__plus {
   padding: 14px 14px;
 }
+
 .product-quantity__number {
   font: 19px "AirbnbCereal-Bd";
-  color: var(--color-primary);
+  color: #cf052d;
 }
 
 .add-to-favorites {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: transparent;
   border-bottom: 2px solid white;
@@ -121,19 +144,11 @@
   width: 15px;
   height: 15px;
 }
+
 .add-to-favorites__text {
   margin: 0 0 3px 3px;
   font-size: 14px;
   line-height: 18px;
   color: white;
 }
-
-.product__image {
-  position: absolute;
-  top: -16%;
-  left: 36%;
-}
-
-.product__image > img {
-  width: 690px;
-}
+/*# sourceMappingURL=page1.css.map */

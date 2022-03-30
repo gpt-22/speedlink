@@ -1,30 +1,30 @@
 @font-face {
   font-family: "AirbnbCereal-Bd";
-  src: url("../fonts/AirbnbCereal_W_Bd.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_Bd.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_Bd.woff") format("woff"), url("../fonts/AirbnbCereal_W_Bd.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "AirbnbCereal-Bk";
-  src: url("../fonts/AirbnbCereal_W_Bk.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_Bk.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_Bk.woff") format("woff"), url("../fonts/AirbnbCereal_W_Bk.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "AirbnbCereal-Blk";
-  src: url("../fonts/AirbnbCereal_W_Blk.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_Blk.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_Blk.woff") format("woff"), url("../fonts/AirbnbCereal_W_Blk.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "AirbnbCereal-Lt";
-  src: url("../fonts/AirbnbCereal_W_Lt.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_Lt.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_Lt.woff") format("woff"), url("../fonts/AirbnbCereal_W_Lt.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "AirbnbCereal-Md";
-  src: url("../fonts/AirbnbCereal_W_Md.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_Md.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_Md.woff") format("woff"), url("../fonts/AirbnbCereal_W_Md.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "AirbnbCereal-XBd";
-  src: url("../fonts/AirbnbCereal_W_XBd.woff") format("woff"),
-    url("../fonts/AirbnbCereal_W_XBd.woff2") format("woff2");
+  src: url("../fonts/AirbnbCereal_W_XBd.woff") format("woff"), url("../fonts/AirbnbCereal_W_XBd.woff2") format("woff2");
 }
+/*# sourceMappingURL=fonts.css.map */

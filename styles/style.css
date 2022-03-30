@@ -1,7 +1,297 @@
-@import "variables.css";
-@import "fonts.css";
-@import "default.css";
+@font-face {
+  font-family: "AirbnbCereal-Bd";
+  src: url("../fonts/AirbnbCereal_W_Bd.woff") format("woff"), url("../fonts/AirbnbCereal_W_Bd.woff2") format("woff2");
+}
 
-@import "components/header.css";
+@font-face {
+  font-family: "AirbnbCereal-Bk";
+  src: url("../fonts/AirbnbCereal_W_Bk.woff") format("woff"), url("../fonts/AirbnbCereal_W_Bk.woff2") format("woff2");
+}
 
-@import "pages/page1.css";
+@font-face {
+  font-family: "AirbnbCereal-Blk";
+  src: url("../fonts/AirbnbCereal_W_Blk.woff") format("woff"), url("../fonts/AirbnbCereal_W_Blk.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AirbnbCereal-Lt";
+  src: url("../fonts/AirbnbCereal_W_Lt.woff") format("woff"), url("../fonts/AirbnbCereal_W_Lt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AirbnbCereal-Md";
+  src: url("../fonts/AirbnbCereal_W_Md.woff") format("woff"), url("../fonts/AirbnbCereal_W_Md.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AirbnbCereal-XBd";
+  src: url("../fonts/AirbnbCereal_W_XBd.woff") format("woff"), url("../fonts/AirbnbCereal_W_XBd.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+body {
+  background: #1b1b1b;
+  font-family: "AirbnbCereal-Md";
+  font-size: 14px;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left,
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__right {
+  margin-right: 75px;
+}
+
+.logo {
+  padding: 43px 82px;
+  background-color: #131313;
+}
+
+.search {
+  margin: 0 0 0 88px;
+  position: relative;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  background: url("../../img/icon-search.svg") no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.search__input {
+  width: 460px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 25px 0 57px;
+  background-color: #131313;
+  color: #878787;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.menu__item {
+  cursor: pointer;
+}
+
+.menu__item--cart {
+  position: relative;
+}
+
+.menu__item--cart::after {
+  content: "3";
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #cf052d;
+  border-radius: 50%;
+}
+
+.menu-burger {
+  margin: 0 0 0 105px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 170px 0 0;
+  background: url("../../img/background-headphones.jpg") right no-repeat;
+}
+
+.container {
+  padding: 160px 75px 0;
+  position: relative;
+}
+
+.product {
+  max-width: 720px;
+}
+
+.product__title {
+  font-size: 62px;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+
+.product__title::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 3.5px;
+  width: 400px;
+  height: 16px;
+  background: #cf052d;
+  z-index: -1;
+}
+
+.product__rating {
+  margin: 0 0 40px 0;
+}
+
+.product-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-rating__text {
+  margin: 0 0 0 10px;
+  font-size: 18px;
+  color: #828282;
+  font: 18px "AirbnbCereal-Lt";
+}
+
+.product__description {
+  margin: 0 0 24px 0;
+  font: 19px "AirbnbCereal-Lt";
+}
+
+.product__price {
+  font: 62px "AirbnbCereal-Bd";
+  line-height: 61px;
+  color: #cf052d;
+}
+
+.product__price-previous {
+  font-size: 25px;
+  text-decoration: line-through;
+  margin: 0 0 40px 0;
+}
+
+.product-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 13px 0;
+}
+
+.product-button {
+  padding: 14px 28px;
+  background-color: transparent;
+  color: #cf052d;
+  font: 19px "AirbnbCereal-Bd";
+  cursor: pointer;
+}
+
+.add-to-cart {
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cf052d;
+}
+
+.add-to-cart__icon {
+  width: 26px;
+  height: 27px;
+  margin: 0 7px 0 0;
+}
+
+.add-to-cart__text {
+  font: 19px "AirbnbCereal-Md";
+  line-height: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.product-quantity {
+  margin: 0 0 0 8px;
+  border: 3px solid #cf052d;
+}
+
+.product-quantity__minus,
+.product-quantity__plus {
+  padding: 14px 14px;
+}
+
+.product-quantity__number {
+  font: 19px "AirbnbCereal-Bd";
+  color: #cf052d;
+}
+
+.add-to-favorites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  border-bottom: 2px solid white;
+}
+
+.add-to-favorites__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.add-to-favorites__text {
+  margin: 0 0 3px 3px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+.product__image {
+  position: absolute;
+  top: -16%;
+  left: 36%;
+}
+
+.product__image > img {
+  width: 690px;
+}
+/*# sourceMappingURL=style.css.map */

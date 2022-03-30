@@ -1,10 +1,11 @@
+@import "variables";
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
 }
 
@@ -14,9 +15,8 @@ textarea {
 }
 
 body {
-  background: #1b1b1b;
+  background: $color-background;
   font-family: "AirbnbCereal-Md";
   font-size: 14px;
   color: white;
 }
-/*# sourceMappingURL=default.css.map */
